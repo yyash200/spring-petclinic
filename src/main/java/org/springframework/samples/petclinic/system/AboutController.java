@@ -27,7 +27,7 @@ public class AboutController {
 		// advice and assistance.");
 
 		AboutUs aboutUs = new AboutUs();
-		aboutUs.setText(aboutUsEntity.getText());
+		aboutUs.setText("Hello! " + aboutUsEntity.getText());
 		return ResponseEntity.status(HttpStatus.OK).body(aboutUs);
 	}
 
